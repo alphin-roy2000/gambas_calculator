@@ -1,0 +1,180 @@
+# Gambas Form File 3.0
+
+{ Form Form
+  MoveScaled(0,0,57,64)
+  Background = &H8BA0A0&
+  Text = ("AR SCIENTIFIC CALCULATOR")
+  Resizable = False
+  Margin = True
+  { PictureBox1 PictureBox
+    MoveScaled(-1,-1,58,21)
+    Picture = Picture["a.jpg"]
+  }
+  { TextBox1 TextBox
+    MoveScaled(2,4,52,9)
+    Font = Font["SF Digital Readout,+10"]
+    NoTabFocus = True
+    Alignment = Align.Right
+  }
+  { Button7 Button
+    MoveScaled(2,35,11,6)
+    Mouse = Mouse.Pointing
+    Text = ("7")
+  }
+  { Button8 Button
+    MoveScaled(14,35,11,6)
+    Mouse = Mouse.Pointing
+    Text = ("8")
+  }
+  { Button9 Button
+    MoveScaled(26,35,11,6)
+    Mouse = Mouse.Pointing
+    Text = ("9")
+  }
+  { Button4 Button
+    MoveScaled(2,42,11,6)
+    Mouse = Mouse.Pointing
+    Text = ("4")
+  }
+  { Button5 Button
+    MoveScaled(14,42,11,6)
+    Mouse = Mouse.Pointing
+    Text = ("5")
+  }
+  { Button6 Button
+    MoveScaled(26,42,11,6)
+    Mouse = Mouse.Pointing
+    Text = ("6")
+  }
+  { Button1 Button
+    MoveScaled(2,49,11,6)
+    Mouse = Mouse.Pointing
+    Text = ("1")
+  }
+  { Button2 Button
+    MoveScaled(14,49,11,6)
+    Mouse = Mouse.Pointing
+    Text = ("2")
+  }
+  { Button3 Button
+    MoveScaled(26,49,11,6)
+    Mouse = Mouse.Pointing
+    Text = ("3")
+  }
+  { Button0 Button
+    MoveScaled(2,56,11,6)
+    Mouse = Mouse.Pointing
+    Text = ("0")
+  }
+  { Buttonlog Button
+    MoveScaled(2,28,7,6)
+    Text = ("log")
+  }
+  { Buttonln Button
+    MoveScaled(10,28,7,6)
+    Text = ("ln")
+  }
+  { Buttonpow2 Button
+    MoveScaled(18,28,7,6)
+    Text = ("x²")
+  }
+  { Buttonpowx Button
+    MoveScaled(26,28,7,6)
+    Text = ("aˣ")
+  }
+  { Buttonequal Button
+    MoveScaled(46,42,8,20)
+    Background = &H301772&
+    Text = ("=")
+  }
+  { Buttondot Button
+    MoveScaled(14,56,11,6)
+    Text = (".")
+  }
+  { Buttonpi Button
+    MoveScaled(26,56,11,6)
+    Text = ("π")
+  }
+  { Buttonmul Button
+    MoveScaled(38,42,7,6)
+    Text = ("×")
+  }
+  { Buttonsub Button
+    MoveScaled(38,49,7,6)
+    Text = ("-")
+  }
+  { Buttonadd Button
+    MoveScaled(38,56,7,6)
+    Text = ("+")
+  }
+  { Buttondiv Button
+    MoveScaled(38,35,7,6)
+    Text = ("÷")
+  }
+  { Buttonclear Button
+    MoveScaled(42,21,12,6)
+    Background = &H802F80&
+    Text = ("Clear")
+  }
+  { Buttoncos Button
+    MoveScaled(10,21,7,6)
+    Text = ("cos")
+  }
+  { Buttonsin Button
+    MoveScaled(2,21,7,6)
+    Text = ("sin")
+  }
+  { Buttontan Button
+    MoveScaled(18,21,7,6)
+    Text = ("tan")
+  }
+  { Buttoninverse Button
+    MoveScaled(26,21,7,6)
+    Text = ("x⁻¹")
+  }
+  { Buttondel Button
+    MoveScaled(46,35,8,6)
+    Background = &H391FBE&
+    Text = ("Del")
+  }
+  { TextBox2 TextBox
+    MoveScaled(2,14,9,5)
+    Font = Font["Roboto Slab,Bold,+3"]
+    Background = &H5F87FF&
+    NoTabFocus = True
+    Alignment = Align.Center
+  }
+  { Label1 Label
+    MoveScaled(12,14,12,4)
+    Text = (" ⟸ operation")
+  }
+  { SwitchButton1 SwitchButton
+    MoveScaled(46,13,6,4)
+  }
+  { TextLabel1 TextLabel
+    MoveScaled(52,14,4,3)
+    Text = ("Rad")
+  }
+  { TextLabel2 TextLabel
+    MoveScaled(45,14,4,4)
+    Text = ("°")
+  }
+  { Buttonroot Button
+    MoveScaled(42,28,7,6)
+    Text = ("√")
+  }
+  { Label2 Label
+    MoveScaled(24.5,0,7,4)
+    Font = Font["Hack"]
+    Text = ("AR")
+    Alignment = Align.Center
+  }
+  { Buttonfact Button
+    MoveScaled(34,21,7,6)
+    Text = ("x!")
+  }
+  { Buttone Button
+    MoveScaled(34,28,7,6)
+    Text = ("eˣ")
+  }
+}

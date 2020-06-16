@@ -1,0 +1,315 @@
+' Gambas class file
+
+Class _BoxedString
+Private a As Single
+Private b As Single
+Private c As Single
+Private d As Single 
+Private X As Single
+
+
+
+Public Sub Button1_Click()
+
+  TextBox1.Text = TextBox1.Text & "1"
+
+End
+
+Public Sub Button2_Click()
+
+  TextBox1.Text = TextBox1.Text & "2"
+
+End
+
+Public Sub Button3_Click()
+
+  TextBox1.Text = TextBox1.Text & "3"
+
+End
+
+Public Sub Button4_Click()
+
+  TextBox1.Text = TextBox1.Text & "4"
+
+End
+
+Public Sub Button5_Click()
+
+  TextBox1.Text = TextBox1.Text & "5"
+
+End
+
+Public Sub Button6_Click()
+
+  TextBox1.Text = TextBox1.Text & "6"
+
+End
+
+Public Sub Button7_Click()
+
+  TextBox1.Text = TextBox1.Text & "7"
+
+End
+
+Public Sub Button8_Click()
+
+  TextBox1.Text = TextBox1.Text & "8"
+
+End
+
+Public Sub Button9_Click()
+
+  TextBox1.Text = TextBox1.Text & "9"
+
+End
+
+Public Sub Button0_Click()
+
+  TextBox1.Text = TextBox1.Text & "0"
+
+End
+
+Public Sub Buttondot_Click()
+
+  TextBox1.Text = TextBox1.Text & "."
+
+End
+Public Sub Buttonclear_Click()
+
+  TextBox1.Text = ""
+  TextBox2.Text = ""
+
+End
+
+Public Sub Buttonadd_Click()
+
+  If Val(TextBox1.Text) <> Null Then
+    c = 1
+    a = Val(TextBox1.Text)
+  Endif
+  TextBox1.Text = ""
+  TextBox2.Text = "+"
+  
+End
+
+Public Sub Buttonsub_Click()
+
+  If Val(TextBox1.Text) <> Null Then
+    c = 2
+    a = Val(TextBox1.Text)
+  Endif
+  TextBox1.Text = ""
+  TextBox2.Text = "-"
+
+End
+
+Public Sub Buttonmul_Click()
+
+  If Val(TextBox1.Text) <> Null Then
+    c = 3
+    a = Val(TextBox1.Text)
+  Endif
+  TextBox1.Text = ""
+  TextBox2.Text = "×"
+
+End
+
+Public Sub Buttonequal_Click()
+
+  If Val(TextBox1.Text) <> Null Then
+    
+    b = Val(TextBox1.Text)
+    
+    If c = 1 Then
+      TextBox1.Text = a + b
+    
+    Else If c = 2 Then
+      TextBox1.Text = a - b
+  
+    Else If c = 3 Then
+      TextBox1.Text = a * b
+      
+    Else If c = 4 Then
+      If b <> 0 Then
+        TextBox1.Text = a / b
+      
+      Else
+        Print Message("Division by Zero")
+      Endif
+    Else If c = 5 Then
+      TextBox1.Text = a ^ b
+  
+    Else If c = 6 Then
+      If d = 0 Then
+        TextBox1.Text = Sin(Rad(b))
+      Else If d = 1 Then
+        TextBox1.Text = Sin(b)
+      Endif
+  
+    Else If c = 7 Then
+      If d = 0 Then
+        TextBox1.Text = Cos(Rad(b))
+      Else If d = 1 Then
+        TextBox1.Text = Cos(b)
+      Endif
+      
+    Else If c = 8 Then
+      If d = 0 Then
+        TextBox1.Text = Tan(Rad(b))
+      Else If d = 1 Then
+        TextBox1.Text = Tan(b)
+      Endif
+      
+    Else If c = 9 Then
+      TextBox1.Text = Log(b)
+      
+    Else If c = 10 Then
+      TextBox1.Text = Log10(b)  
+    
+    Else If c = 11 Then
+      TextBox1.Text = a ^ 2
+      
+    Else If c = 12 Then
+      TextBox1.Text = 1 / b
+     
+    Else If c = 13 Then
+      TextBox1.Text = Sqr(b)
+    Else If c = 14 Then
+      X = 1
+      For index As Integer = b To 1 Step -1
+         X = X * index
+         
+      Next
+      TextBox1.Text = X
+    Else If c = 15 Then
+      TextBox1.Text = 2.71828 ^ b 
+      
+    Else
+      Message.Error("Invalid")  
+         
+    Endif
+  Endif
+     TextBox2.Text = ""
+     c = 0
+End
+    
+ Public Sub Buttondiv_Click()
+
+  If Val(TextBox1.Text) <> Null Then
+    c = 4
+    a = Val(TextBox1.Text)
+  Endif
+  TextBox1.Text = ""
+  TextBox2.Text = "÷"
+
+End
+
+Public Sub Buttondel_Click()
+
+  TextBox1.Text = Mid(TextBox1.Text, 1, Len(TextBox1.Text) - 1)
+
+End
+
+Public Sub Buttonpi_Click()
+
+  TextBox1.Text = TextBox1.Text & Pi
+
+End
+
+
+
+Public Sub Buttonsin_Click()
+
+  TextBox2.Text = "sin"
+  c = 6
+
+End
+
+Public Sub Buttoncos_Click()
+
+  TextBox2.Text = "cos"
+  c = 7
+
+End
+
+Public Sub Buttontan_Click()
+
+  TextBox2.Text = "tan"
+  c = 8
+
+End
+
+Public Sub Buttonlog_Click()
+
+  TextBox2.Text = "log"
+  c = 10
+
+End
+
+Public Sub Buttonln_Click()
+
+  TextBox2.Text = "ln"
+  c = 9
+
+End
+
+Public Sub Buttonpow2_Click()
+
+  TextBox2.Text = "x²"
+  If Val(TextBox1.Text) <> Null Then
+    c = 11
+    a = Val(TextBox1.Text)
+  Endif
+  
+
+End
+
+Public Sub Buttonpowx_Click()
+
+  TextBox2.Text = "xˣ"
+  If Val(TextBox1.Text) <> Null Then
+    c = 5
+    a = Val(TextBox1.Text)
+  Endif
+  TextBox1.Text = ""
+
+End
+
+Public Sub SwitchButton1_Click()
+
+  If SwitchButton1.Value = True Then
+    d = 1
+  Else If SwitchButton1.Value = False Then
+    d = 0
+  Endif
+
+End
+
+Public Sub Buttoninverse_Click()
+
+  c = 12
+  TextBox2.Text = "x⁻¹"
+
+End
+
+
+Public Sub Buttonroot_Click()
+
+  c = 13
+  TextBox2.Text = "√"
+
+End
+
+Public Sub Buttonfact_Click()
+
+  c = 14
+  TextBox2.Text = "x!"
+
+End
+
+Public Sub Buttone_Click()
+
+  c = 15
+  TextBox2.Text = "eˣ"
+
+End
